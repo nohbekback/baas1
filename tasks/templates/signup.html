@@ -1,0 +1,8 @@
+<h1>Signup</h1>
+
+<form method="POST">
+{%csrf_token%}
+{% comment %} as_p da formato {% endcomment %}
+  {{form.as_p}}
+  <button>Signup</button>
+</form>
