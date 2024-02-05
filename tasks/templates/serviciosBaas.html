@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Servicios baas</h1>
+<form action="/servicios/baas" method="POST">
+    {% csrf_token %}
+    {{form}}
+</form>
+<button>save</button>
+
+{% endblock %}
